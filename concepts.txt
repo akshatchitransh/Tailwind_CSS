@@ -1,0 +1,89 @@
+npm create vite@latest
+npm i 
+dev de-endencies - jo project banate time chhiye par production me jaroori nahi jese tailwind,vite
+
+class is reserved keyword for js i html so in react we use className
+
+
+
+
+
+THINGS TO KNOW
+
+####1- FLEX
+div will render one below other always
+either use span or give display flext to the pareant component
+<divclassName ="flex ">
+
+####GRIDS
+unequal width deni ho jab internal divs Ko
+<div className ="grid grid-cols-12">
+  <div className = "col-span-5">
+
+
+  1- bg-color-300
+
+
+  ####RESPONSIVENESS
+  Breakpoint sm ,md,lg,xl,2xl see range on tailwind
+
+  ;;;; TAILWIND is mobile first
+  <div className="sm:bg-blue-300 bg-red-300">
+  unprefixed (bg-red-300) utilities take place at every point
+  prefixed (sm:bg-blue-300)utilities take place at breakpoint and ABOVE
+   sm -2xl tak
+
+   --> start me to red hi rahega which is default par as soon as it becomes larger than sm to blue ho jaega
+
+
+
+1. text-center left -- to align text indise a div or paragrapg
+2. align-start center -- children ko vertically kese rakhna hai 
+3. justify-start center -- children horizontally rakhna ho
+5. item-start -- vertical alignment of itme
+4. self-start center -- single item 
+
+
+6. flex-1
+space ratio amongst all children(har children me dena padega ki ye wala 1 ye wala 2 ye wala 3x)
+
+IMANGE ke liye , usko div me dalo or img me class="inline-block"
+
+7. text-red-500
+8. text-7xl
+9. rounded-s-3xl
+
+SOME REACT 
+1. react ka main kaam hai reusable components bana sake hum or optimisation kar sake at max.
+
+2. component banana aa gaya .
+3. ab component ke anadar-
+a.attributes pass karte hain
+b.function bhej sakte hain
+c.pura component(wrapper ki tarah) bhej sakte hain.
+
+4. MAIN----<> component banta hai or fir component render hota hai.
+5.component render <BUTTON/> iska kewal ye matlab hai ki vo button wala code udhar likh lo .
+6.reusable button banana hai to function passs karoge har baar as prop or udhar onclick=prop.onclick 
+
+
+7. prop.children - ye proprty har component ke paas hoti hai (basically component me component pass karna)
+
+8. <wrapper>
+<BUTTON/>
+</wrapper>
+
+ab wrapper me props.children me aagaya button ab wrappere jo chahe vo kar sakta hai is button ke sath.
+className ={``} -- when js will be injectreds in the className
+
+<span onClick={changecolor} className={`corsor-ponter px-31 ${disabled?"bg-red-200":"bg-red-300"}`}>{children}</span>
+<Botton disabled={true}>signup</Button>
+<Input type ="text" placeholder ={username}></input>
+
+
+export const Input = ({onClick , type,placeholder})=>{
+    return 
+}
+
+h-screen matlab puri screen
+w-[40px] h-[50px] agar kabhi kisi input ki ya span ki ya div ki height wwidth bhot choti or customised rakhni hai to ye 
